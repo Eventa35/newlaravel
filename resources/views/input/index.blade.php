@@ -43,5 +43,6 @@
         @endforeach
     </tbody>
   </table>
+  <button><a href="resource/views/input/create">Add</a></button>
 <div>
 @endsection

@@ -20,24 +20,24 @@
         </ul>
       </div><br />
     @endif
-      <form method="post" action="{{ route('shares.update', $share->id) }}">
+      <form method="post" action="{{ route('perpustakaan.update', $perpustakaan->id) }}">
         @method('PATCH')
         @csrf
         <div class="form-group">
           <label for="name">Judul :</label>
-          <input type="text" class="form-control" name="judul" value={{ $share->judul }} />
+          <input type="text" class="form-control" name="judul" value={{ $perpustakaan->judul }} />
         </div>
         <div class="form-group">
           <label for="price">Penerbit :</label>
-          <input type="text" class="form-control" name="penerbit" value={{ $share->penerbit }} />
+          <input type="text" class="form-control" name="penerbit" value={{ $perpustakaan->penerbit }} />
         </div>
         <div class="form-group">
           <label for="quantity">Tahun Terbit :</label>
-          <input type="text" class="form-control" name="tahun_terbit" value={{ $share->tahun_terbit }} />
+          <input type="text" class="form-control" name="tahun_terbit" value={{ $perpustakaan->tahun_terbit }} />
         </div>
         <div class="form-group">
           <label for="quantity">Pengarang :</label>
-          <input type="text" class="form-control" name="pengarang" value={{ $share->pengarang }} />
+          <input type="text" class="form-control" name="pengarang" value={{ $perpustakaan->pengarang }} />
         </div>
         <button type="submit" class="btn btn-primary">Update</button>
       </form>

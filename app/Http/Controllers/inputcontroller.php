@@ -116,6 +116,10 @@ class inputcontroller extends Controller
      */
     public function destroy($id)
     {
+        $perpustakaan = perpustakaan::find($id);
+     $perpustakaan->delete();
+
+     return redirect('/perpustakaan')->with('success', 'Stock has been deleted Successfully');
         //
     }
 }
